@@ -1,0 +1,32 @@
+<nav class="flex items-center justify-between bg-[#32526E] p-5 w-full h-20 fixed top-0 left-0 z-50">
+  <div class="flex items-center space-x-5 pl-20">
+    <ul class="flex space-x-5 items-center">
+      <li><a routerLink="home" routerLinkActive="active-link" class="text-white">
+          <img src="assets/images/logo 2.png" alt="Antivirus Logo" class="h-20"></a></li>
+      <li><a routerLink="/home" fragment="service" routerLinkActive="active-link" class="text-white">Servicios</a></li>
+      <li><a routerLink="/home" fragment="opportunities" routerLinkActive="active-link" class="text-white">Oportunidades</a></li>
+      <li><a routerLink="/ourteam" routerLinkActive="active-link" class="text-white">Quiénes Somos</a></li>
+      <li><a routerLink="/news" routerLinkActive="active-link" class="text-white">Novedades</a></li>
+
+    </ul>
+  </div>
+  <div class="flex items-center space-x-5 pr-20">
+    <div class="flex space-x-3">
+      <a id="btn-register" class="pr-3" routerLink="register" routerLinkActive="active-link">
+        <img src="assets/images/toggle_off_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="register" width="30px">
+      </a>
+      <a id="btn-login" class="pr-4" routerLink="register" routerLinkActive="active-link">
+        <img src="assets/images/person_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="login" width="30px">
+      </a>
+    </div>
+    <div class="relative">
+      <input type="text" placeholder="Buscar..." id="search-input"
+        class="hidden h-[45px] w-[500px] rounded-[30px] bg-[#F5F5F520] text-white absolute right-[5px] pl-5">
+      <button
+        class="bg-none border-none text-[20px] cursor-pointer relative right-[15px] top-[5px] focus:outline-none"
+        (click)="toggleSearch()">
+        <img src="assets/images/icons8-búsqueda-64 2.png" alt="search" width="30px">
+      </button>
+    </div>
+  </div>
+</nav>
