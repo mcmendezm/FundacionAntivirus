@@ -3,7 +3,7 @@
     <a routerLink="home" routerLinkActive="active-link" class="text-white logo">
       <img src="assets/images/logo 2.png" alt="Antivirus Logo" class="h-16 md:h-20">
     </a>
-    <ul class="hidden md:flex space-x-5 items-center">
+    <ul class="hidden md:flex space-x-5 items-center" id="navegation">
       <li><a routerLink="/home" fragment="service" routerLinkActive="active-link" class="nav-link">Servicios</a></li>
       <li><a routerLink="/home" fragment="opportunities" routerLinkActive="active-link" class="nav-link">Oportunidades</a></li>
       <li><a routerLink="/ourteam" routerLinkActive="active-link" class="nav-link">Quiénes Somos</a></li>
@@ -56,16 +56,30 @@
         </svg>
       </button>
     </div>
-    <ul class="flex flex-col space-y-4 text-center mt-6">
+    <ul class="flex flex-col space-y-4 text-center mt-6" id="menu-options">
       <li><a (click)="closeModal()" routerLink="/home" fragment="service" routerLinkActive="active-link" class="nav-link-modal text-[#283E51] hover:text-[#4B79A1]">Servicios</a></li>
       <li><a (click)="closeModal()" routerLink="/home" fragment="opportunities" routerLinkActive="active-link" class="nav-link-modal text-[#283E51] hover:text-[#4B79A1]">Oportunidades</a></li>
       <li><a (click)="closeModal()" routerLink="/ourteam" routerLinkActive="active-link" class="nav-link-modal text-[#283E51] hover:text-[#4B79A1]">Quiénes Somos</a></li>
       <li><a (click)="closeModal()" routerLink="/news" routerLinkActive="active-link" class="nav-link-modal text-[#283E51] hover:text-[#4B79A1]">Novedades</a></li>
-      <li><a (click)="closeModal()" (click)="toggleSearch()" class="nav-link-modal text-[#283E51] hover:text-[#4B79A1]">Buscar</a></li>
-    </ul>
-    <div class="flex justify-between mt-8">
+      <li><a (click)="showSearchInModal()" class="nav-link-modal text-[#283E51] hover:text-[#4B79A1]">Buscar</a></li>
+      <div class="flex justify-between mt-8">
       <a routerLink="register" class="text-white bg-[#4B79A1] hover:bg-[#3A5A7F] px-4 py-2 rounded-lg mx-2">Registrarme</a>
       <a routerLink="login" class="text-white bg-[#4B79A1] hover:bg-[#3A5A7F] px-4 py-2 rounded-lg mx-2">Ingresar</a>
     </div>
+    </ul>
+    <div id="modal-search" class="hidden mt-6">
+      <div class="relative">
+        <input type="text" placeholder="Buscar..." id="modal-search-input" class="h-[45px] w-full rounded-[30px] bg-[#F5F5F520] text-black pl-5">
+        <button class="bg-none border-none text-[20px] cursor-pointer absolute right-[15px] top-[10px] focus:outline-none">
+          <img src="assets/images/icons8-búsqueda-64 2.png" alt="search" width="30px">
+        </button>
+      </div>
+      <div class="flex justify-center mt-8">
+        <button class="text-white bg-[#4B79A1] hover:bg-[#3A5A7F] px-4 py-2 rounded-lg">Enviar</button>
+      </div>
+    </div>
   </div>
 </div>
+
+
+

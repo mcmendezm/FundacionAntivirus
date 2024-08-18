@@ -11,8 +11,9 @@ export class NavbarComponent {
     const searchInput = document.getElementById('search-input');
     const registerButton = document.getElementById('btn-register');
     const loginButton = document.getElementById('btn-login');
+    const navigation = document.getElementById('navigation');
 
-    if (searchInput && registerButton && loginButton) {
+    if (searchInput && registerButton && loginButton ) {
       if (searchInput.classList.contains('hidden')) {
         searchInput.classList.remove('hidden');
         searchInput.classList.add('visible');
@@ -44,9 +45,27 @@ export class NavbarComponent {
 
   closeModal(): void {
     const modal = document.getElementById('menu-modal');
+    const searchInModal = document.getElementById('modal-search');
+    const menuOptions = document.getElementById('menu-options');
+
     if (modal) {
       modal.classList.remove('visible');
       modal.classList.add('hidden');
+    }
+
+    if (searchInModal && menuOptions) {
+      searchInModal.classList.add('hidden');
+      menuOptions.classList.remove('hidden');
+    }
+  }
+
+  showSearchInModal(): void {
+    const searchInModal = document.getElementById('modal-search');
+    const menuOptions = document.getElementById('menu-options');
+
+    if (searchInModal && menuOptions) {
+      menuOptions.classList.add('hidden');
+      searchInModal.classList.remove('hidden');
     }
   }
 }
