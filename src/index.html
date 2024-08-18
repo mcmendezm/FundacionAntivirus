@@ -9,6 +9,23 @@
 </head>
 <body>
   <app-root></app-root>
+  <script>
+    window.onload = () => {
+      const splineViewers = document.querySelectorAll('spline-viewer');
+
+      splineViewers.forEach((splineViewer) => {
+        const interval = setInterval(() => {
+          if (splineViewer.shadowRoot) {
+            const logoElement = splineViewer.shadowRoot.querySelector('#logo');
+            if (logoElement) {
+              logoElement.remove();
+              clearInterval(interval);
+            }
+          }
+        }, 1000);
+      });
+    };
+  </script>
   <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.0/build/spline-viewer.js"></script>
 </body>
 </html>

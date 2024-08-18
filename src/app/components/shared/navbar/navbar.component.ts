@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+
   toggleSearch(): void {
     const searchInput = document.getElementById('search-input');
     const registerButton = document.getElementById('btn-register');
@@ -23,6 +24,29 @@ export class NavbarComponent {
         registerButton.classList.remove('hidden');
         loginButton.classList.remove('hidden');
       }
+    }
+  }
+
+  toggleDropdown(): void {
+    const dropdown = document.getElementById('dropdown');
+    if (dropdown) {
+      dropdown.classList.toggle('visible');
+    }
+  }
+
+  openModal(): void {
+    const modal = document.getElementById('menu-modal');
+    if (modal) {
+      modal.classList.remove('hidden');
+      modal.classList.add('visible');
+    }
+  }
+
+  closeModal(): void {
+    const modal = document.getElementById('menu-modal');
+    if (modal) {
+      modal.classList.remove('visible');
+      modal.classList.add('hidden');
     }
   }
 }

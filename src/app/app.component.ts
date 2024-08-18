@@ -6,8 +6,8 @@ import { Router } from '@angular/router';
   templateUrl: './app.component.html',
   template: `
     <app-navbar></app-navbar>
-    <app-footer></app-footer>
     <router-outlet></router-outlet>
+    <app-footer></app-footer>
   `,
   styleUrls: ['./app.component.css']
 })
