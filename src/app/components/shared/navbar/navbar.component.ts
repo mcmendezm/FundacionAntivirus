@@ -11,7 +11,6 @@ export class NavbarComponent {
     const searchInput = document.getElementById('search-input');
     const registerButton = document.getElementById('btn-register');
     const loginButton = document.getElementById('btn-login');
-    const navigation = document.getElementById('navigation');
 
     if (searchInput && registerButton && loginButton ) {
       if (searchInput.classList.contains('hidden')) {

@@ -22,6 +22,7 @@ import { BenefitsSectionComponent } from './components/pages/register/registerCo
 import { LoginComponent } from './components/pages/login/login.component';
 import { LoginFormComponent } from './components/pages/login/loginComponents/login-form/login-form.component';
 import { SocialLoginComponent } from './components/pages/login/loginComponents/social-login/social-login.component';
+import { ButtonComponent } from './components/shared/button/button.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { SocialLoginComponent } from './components/pages/login/loginComponents/s
     LoginComponent,
     LoginFormComponent,
     SocialLoginComponent,
+    ButtonComponent,
   ],
   imports: [
     BrowserModule,

@@ -63,8 +63,8 @@
       <li><a (click)="closeModal()" routerLink="/news" routerLinkActive="active-link" class="nav-link-modal text-[#283E51] hover:text-[#4B79A1]">Novedades</a></li>
       <li><a (click)="showSearchInModal()" class="nav-link-modal text-[#283E51] hover:text-[#4B79A1]">Buscar</a></li>
       <div class="flex justify-between mt-8">
-      <a routerLink="register" class="text-white bg-[#4B79A1] hover:bg-[#3A5A7F] px-4 py-2 rounded-lg mx-2">Registrarme</a>
-      <a routerLink="login" class="text-white bg-[#4B79A1] hover:bg-[#3A5A7F] px-4 py-2 rounded-lg mx-2">Ingresar</a>
+      <a routerLink="register" (click)="closeModal()" class="text-white bg-[#4B79A1] hover:bg-[#3A5A7F] px-4 py-2 rounded-lg mx-2">Registrarme</a>
+      <a routerLink="login" (click)="closeModal()" class="text-white bg-[#4B79A1] hover:bg-[#3A5A7F] px-4 py-2 rounded-lg mx-2">Ingresar</a>
     </div>
     </ul>
     <div id="modal-search" class="hidden mt-6">
