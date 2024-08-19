@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
   selector: 'app-root',
   templateUrl: './app.component.html',
   template: `
+    <app-wompi-button></app-wompi-button>
     <app-navbar></app-navbar>
     <router-outlet></router-outlet>
     <app-footer></app-footer>
