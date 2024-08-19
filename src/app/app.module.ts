@@ -1,17 +1,28 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HomeComponent } from './components/home/home.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { NewsComponent } from './components/news/news.component';
-import { OurteamComponent } from './components/ourteam/ourteam.component';
-import { RegisterComponent } from './components/register/register.component';
-import { FooterComponent } from './components/footer/footer.component';
-
-
-
+import { AppComponent } from './app.component';
+import { HomeComponent } from './components/pages/home/home.component';
+import { NavbarComponent } from './components/shared/navbar/navbar.component';
+import { NewsComponent } from './components/pages/news/news.component';
+import { OurteamComponent } from './components/pages/ourteam/ourteam.component';
+import { RegisterComponent } from './components/pages/register/register.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
+import { HeroComponent } from './components/pages/home/componentHome/hero/hero.component';
+import { OpportunitiesComponent } from './components/pages/home/componentHome/opportunities/opportunities.component';
+import { ServicesComponent } from './components/pages/home/componentHome/services/services.component';
+import { CarouselComponent } from './components/pages/news/newsComponents/carousel/carousel.component';
+import { SearchComponent } from './components/pages/news/newsComponents/search/search.component';
+import { OpportunityCardsComponent } from './components/pages/news/newsComponents/opportunity-cards/opportunity-cards.component';
+import { TeamSectionComponent } from './components/pages/ourteam/ourteamComponents/team-section/team-section.component';
+import { WhoWeAreComponent } from './components/pages/ourteam/ourteamComponents/who-we-are/who-we-are.component';
+import { ValuesSectionComponent } from './components/pages/ourteam/ourteamComponents/values-section/values-section.component';
+import { FormSectionComponent } from './components/pages/register/registerComponents/form-section/form-section.component';
+import { BenefitsSectionComponent } from './components/pages/register/registerComponents/benefits-section/benefits-section.component';
+import { LoginComponent } from './components/pages/login/login.component';
+import { LoginFormComponent } from './components/pages/login/loginComponents/login-form/login-form.component';
+import { SocialLoginComponent } from './components/pages/login/loginComponents/social-login/social-login.component';
+import { ButtonComponent } from './components/shared/button/button.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +33,27 @@ import { FooterComponent } from './components/footer/footer.component';
     OurteamComponent,
     RegisterComponent,
     FooterComponent,
+    HeroComponent,
+    OpportunitiesComponent,
+    ServicesComponent,
+    CarouselComponent,
+    SearchComponent,
+    OpportunityCardsComponent,
+    TeamSectionComponent,
+    WhoWeAreComponent,
+    ValuesSectionComponent,
+    FormSectionComponent,
+    BenefitsSectionComponent,
+    LoginComponent,
+    LoginFormComponent,
+    SocialLoginComponent,
+    ButtonComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],  
   providers: [],
   bootstrap: [AppComponent]
 })
