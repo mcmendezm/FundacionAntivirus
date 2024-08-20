@@ -1,27 +1,31 @@
 <section id="opportunities" class="pt-20 bg-muted w-full">
   <h2 class="text-3xl text-[#32526E] text-center mb-5">¡Descubre estas oportunidades únicas!</h2>
   <div class="flex justify-center flex-wrap gap-5">
-    <a href="https://es.nodoeafit.com/" target="_blank"
-      class="bg-card rounded-lg shadow-md sm:w-64 text-center p-5 transform transition-transform hover:scale-105">
-      <img src="assets/images/nodo.png" alt="Nodo Eafit" class="w-full h-48 object-cover mb-3 rounded-lg">
-      <h3 class="text-xl mb-3">Nodo Eafit</h3>
-      <p class="text-card-foreground text-left">Participa en programas de formación y talleres en la Universidad EAFIT
-        en el área de la tecnología para potenciar tus habilidades y conocimientos. ¡Inscríbete hoy!</p>
-    </a>
-    <a href="https://velezreyesmas.com/" target="_blank"
-      class="bg-card rounded-lg shadow-md sm:w-64 text-center p-5 transform transition-transform hover:scale-105">
-      <img src="assets/images/velez.png" alt="Becas vélezreyes+" class="w-full h-48 object-cover mb-3 rounded-lg">
-      <h3 class="text-xl mb-3">Becas vélezreyes+</h3>
-      <p class="text-card-foreground text-left">Ofrecen apoyo financiero a estudiantes destacados. Solicita tu beca y
-        alcanza tus metas educativas.</p>
-    </a>
-    <a href="https://www.comfama.com/trabajo-con-proposito/empleo/centro-de-empleo-para-la-industria-digital/"
-      target="_blank"
-      class="bg-card rounded-lg shadow-md sm:w-64 text-center p-5 transform transition-transform hover:scale-105">
-      <img src="assets/images/comfama.jpg" alt="Comfama" class="w-full h-48 object-cover mb-3 rounded-lg">
-      <h3 class="text-xl mb-3">Comfama</h3>
-      <p class="text-card-foreground text-left">Accede a programas educativos y recreativos con Comfama. Encuentra la
-        oportunidad perfecta para tu crecimiento personal y profesional.</p>
-    </a>
+    <app-opportunitie-card
+     class=" bg-card rounded-lg shadow-md sm:w-64 text-center p-5 transform transition-transform hover:scale-105"
+      link="https://es.nodoeafit.com/" 
+      imageSrc="assets/images/nodo.png" 
+      imageAlt="Nodo Eafit" 
+      title="Nodo Eafit" 
+      description="Participa en programas de formación y talleres en la Universidad EAFIT en el área de la tecnología para potenciar tus habilidades y conocimientos. ¡Inscríbete hoy!">
+    </app-opportunitie-card>
+
+    <app-opportunitie-card 
+    class=" bg-card rounded-lg shadow-md sm:w-64 text-center p-5 transform transition-transform hover:scale-105"
+      link="https://velezreyesmas.com/" 
+      imageSrc="assets/images/velez.png" 
+      imageAlt="Becas vélezreyes+" 
+      title="Becas vélezreyes+" 
+      description="Ofrecen apoyo financiero a estudiantes destacados. Solicita tu beca y alcanza tus metas educativas.">
+    </app-opportunitie-card>
+
+    <app-opportunitie-card 
+    class=" bg-card rounded-lg shadow-md sm:w-64 text-center p-5 transform transition-transform hover:scale-105"
+      link="https://www.comfama.com/trabajo-con-proposito/empleo/centro-de-empleo-para-la-industria-digital/" 
+      imageSrc="assets/images/comfama.jpg" 
+      imageAlt="Comfama" 
+      title="Comfama" 
+      description="Accede a programas educativos y recreativos con Comfama. Encuentra la oportunidad perfecta para tu crecimiento personal y profesional.">
+    </app-opportunitie-card>
   </div>
 </section>
