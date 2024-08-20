@@ -1,54 +1,38 @@
-<section id="service" class="pt-20 w-full">
+<section id="service" class="py-20 w-full">
   <h2 class="text-3xl text-[#32526E] text-center mb-5">Servicios</h2>
   <div class="flex justify-center flex-wrap">
     <div class="justify-center max-w-screen-lg mx-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
-      <div
-        class="bg-white shadow-lg rounded-lg overflow-hidden m-5 transform transition-transform hover:scale-105 w-64">
-        <figure>
-          <img src="assets/images/imagen 1.png" class="w-full">
-        </figure>
-        <div class="p-5 text-center bg-card">
-          <h3 class="text-xl mb-3">Pro-Vocación</h3>
-          <p class="text-gray-700 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptates
-            voluptate temporibus natus ex fugiat nostrum?</p>
-          <a href="#"
-            class="text-yellow-500 border border-yellow-500 py-2 px-4 rounded hover:bg-yellow-500 hover:text-whire">LO
-            QUIERO</a>
-        </div>
-      </div>
+      
+      <app-services-card
+        class="  bg-muted  shadow-lg rounded-lg overflow-hidden m-5 transform transition-transform hover:scale-105 w-72 text-justify"
+        link="/register"
+        imageSrc="assets/images/imagen 1.png"
+        imageAlt="Pro-Vocación"
+        title="Pro-Vocación"
+        description="Descubre tu verdadera vocación a través de nuestro programa Pro-Vocación. Te ayudamos a identificar tus fortalezas y a explorar las mejores opciones educativas y profesionales. ¡Da el primer paso hacia tu futuro hoy!"
+        buttonText="LO QUIERO">
+      </app-services-card>
 
-      <div
-        class="bg-white shadow-lg rounded-lg overflow-hidden m-5 transform transition-transform hover:scale-105 w-64">
-        <figure>
-          <img src="assets/images/imagen 2.png" class="w-full">
-        </figure>
-        <div class="p-5 text-center bg-card">
-          <h3 class="text-xl mb-3">Asesoria sociopedagógica</h3>
-          <p class="text-gray-700 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptates
-            voluptate temporibus natus ex fugiat nostrum?</p>
-          <a href="#"
-            class="text-yellow-500 border border-yellow-500 py-2 px-4 rounded hover:bg-yellow-500 hover:text-white">LO
-            QUIERO</a>
-        </div>
-      </div>
+      <app-services-card
+        link="/register"
+        class=" bg-muted shadow-lg rounded-lg overflow-hidden m-5 transform transition-transform hover:scale-105 w-72 text-justify"
+        imageSrc="assets/images/imagen 2.png"
+        imageAlt="Asesoria sociopedagógica"
+        title="Asesoría Sociopedagógica"
+        description="Recibe orientación personalizada para superar los desafíos educativos. Nuestra asesoría sociopedagógica te ofrece herramientas y estrategias para mejorar tu rendimiento académico y bienestar personal."
+        buttonText="LO QUIERO">
+      </app-services-card>
 
-      <div
-        class="bg-white shadow-lg rounded-lg overflow-hidden m-5 transform transition-transform hover:scale-105 w-64">
-        <figure>
-          <img src="assets/images/imagen 3.png" class="w-full">
-        </figure>
-        <div class="p-5 text-center bg-card">
-          <h3 class="text-xl mb-3">Test sociovocacional</h3>
-          <p class="text-gray-700 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptates
-            voluptate temporibus natus ex fugiat nostrum?</p>
-          <a href="#"
-            class="text-yellow-500 border border-yellow-500 py-2 px-4 rounded hover:bg-yellow-500 hover:text-white">LO
-            QUIERO</a>
-        </div>
-      </div>
+      <app-services-card
+        link="/register"
+        class=" bg-muted  shadow-lg rounded-lg overflow-hidden m-5 transform transition-transform hover:scale-105 w-72 text-justify"
+        imageSrc="assets/images/imagen 3.png"
+        imageAlt="Test sociovocacional"
+        title="Test Sociovocacional"
+        description="¿No estás seguro de cuál es la mejor carrera para ti? Nuestro Test Sociovocacional te guiará en la elección de una carrera basada en tus intereses, habilidades y valores personales. ¡Descubre tu camino ideal!"
+        buttonText="LO QUIERO">
+      </app-services-card>
+
     </div>
   </div>
 </section>
