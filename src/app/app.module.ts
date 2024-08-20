@@ -25,6 +25,7 @@ import { SocialLoginComponent } from './components/pages/login/loginComponents/s
 import { ButtonComponent } from './components/shared/button/button.component';
 import { WompiButtonComponent } from './components/shared/wompi-button/wompi-button.component';
 import { OpportunitieCardComponent } from './components/pages/home/componentHome/opportunities/opportunitie-card/opportunitie-card.component';
+import { ServicesCardComponent } from './components/pages/home/componentHome/services/services-card/services-card.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { OpportunitieCardComponent } from './components/pages/home/componentHome
     ButtonComponent,
     WompiButtonComponent,
     OpportunitieCardComponent,
+    ServicesCardComponent,
   ],
   imports: [
     BrowserModule,
