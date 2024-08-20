@@ -11,7 +11,6 @@ import { FooterComponent } from './components/shared/footer/footer.component';
 import { HeroComponent } from './components/pages/home/componentHome/hero/hero.component';
 import { OpportunitiesComponent } from './components/pages/home/componentHome/opportunities/opportunities.component';
 import { ServicesComponent } from './components/pages/home/componentHome/services/services.component';
-import { CarouselComponent } from './components/pages/news/newsComponents/carousel/carousel.component';
 import { SearchComponent } from './components/pages/news/newsComponents/search/search.component';
 import { OpportunityCardsComponent } from './components/pages/news/newsComponents/opportunity-cards/opportunity-cards.component';
 import { TeamSectionComponent } from './components/pages/ourteam/ourteamComponents/team-section/team-section.component';
@@ -24,6 +23,7 @@ import { LoginFormComponent } from './components/pages/login/loginComponents/log
 import { SocialLoginComponent } from './components/pages/login/loginComponents/social-login/social-login.component';
 import { ButtonComponent } from './components/shared/button/button.component';
 import { WompiButtonComponent } from './components/shared/wompi-button/wompi-button.component';
+import { CarouselComponent } from './components/shared/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +37,6 @@ import { WompiButtonComponent } from './components/shared/wompi-button/wompi-but
     HeroComponent,
     OpportunitiesComponent,
     ServicesComponent,
-    CarouselComponent,
     SearchComponent,
     OpportunityCardsComponent,
     TeamSectionComponent,
@@ -50,6 +49,7 @@ import { WompiButtonComponent } from './components/shared/wompi-button/wompi-but
     SocialLoginComponent,
     ButtonComponent,
     WompiButtonComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
