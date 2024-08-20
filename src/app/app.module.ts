@@ -23,6 +23,7 @@ import { LoginFormComponent } from './components/pages/login/loginComponents/log
 import { SocialLoginComponent } from './components/pages/login/loginComponents/social-login/social-login.component';
 import { ButtonComponent } from './components/shared/button/button.component';
 import { WompiButtonComponent } from './components/shared/wompi-button/wompi-button.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { WompiButtonComponent } from './components/shared/wompi-button/wompi-but
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],  
   providers: [],
