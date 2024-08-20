@@ -1,14 +1,12 @@
-<c-carousel>
-  <c-carousel-indicators></c-carousel-indicators>
-  <c-carousel-inner>
-    <c-carousel-item *ngFor="let slide of slides">
-      <img
-        [src]="slide.src"
-        alt="{{ slide.title }}"
-        class="d-block w-100"
-        loading="lazy" />
-    </c-carousel-item>
-  </c-carousel-inner>
-  <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
-  <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
-</c-carousel>
+<div class="relative pt-20">
+  <div class="overflow-hidden">
+    <div class="flex transition-transform duration-500" [ngStyle]="{'transform': 'translateX(-' + currentIndex * 100 + '%)'}">
+      <div *ngFor="let item of items" class="w-full flex-shrink-0">
+        <img [src]="item.image" alt="carousel image" class="w-full h-64 object-cover">
+      </div>
+    </div>
+  </div>
+  <button (click)="prev()" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-700 text-white px-4 py-2 rounded-full shadow-lg text-2xl">&lt;</button>
+  <button (click)="next()" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-700 text-white px-4 py-2 rounded-full shadow-lg text-2xl">&gt;</button>
+</div>
+

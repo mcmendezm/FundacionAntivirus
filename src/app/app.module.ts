@@ -24,6 +24,8 @@ import { SocialLoginComponent } from './components/pages/login/loginComponents/s
 import { ButtonComponent } from './components/shared/button/button.component';
 import { WompiButtonComponent } from './components/shared/wompi-button/wompi-button.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselComponent } from './components/pages/news/newsComponents/carousel/carousel.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -49,11 +51,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SocialLoginComponent,
     ButtonComponent,
     WompiButtonComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    CommonModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],  
   providers: [],

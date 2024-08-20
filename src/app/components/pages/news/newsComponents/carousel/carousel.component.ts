@@ -1,35 +1,54 @@
-import { NgFor } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { RouterLink } from '@angular/router';
-import {
-  CarouselComponent,
-  CarouselControlComponent,
-  CarouselIndicatorsComponent,
-  CarouselInnerComponent,
-  CarouselItemComponent,
-  ThemeDirective
-} from '@coreui/angular';
 
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
-  styleUrls: ['./carousel.component.scss'],
-  standalone: true,
-  imports: [ThemeDirective, CarouselComponent, CarouselIndicatorsComponent, CarouselInnerComponent, NgFor, CarouselItemComponent, CarouselControlComponent, RouterLink]
+  styleUrls: ['./carousel.component.css']
 })
-export class Carousel03Component implements OnInit {
+export class CarouselComponent implements OnInit {
+  items = [
+    { image: 'assets/images/Comfama-carrusel.jpg' },
+    { image: 'assets/images/nodo-carrusel.svg' },
+    { image: 'assets/images/Sapiencia-carrusel.jpg' }
+  ];
+  currentIndex = 0;
+  private intervalId: any;
+  private readonly intervalTime = 3500;
 
-  slides: any[] = new Array(3).fill({ id: -1, src: '', title: '', subtitle: '' });
+  constructor() { }
 
-  ngOnInit(): void {
-    this.slides[0] = {
-      src: './assets/img/angular.jpg'
-    };
-    this.slides[1] = {
-      src: './assets/img/react.jpg'
-    };
-    this.slides[2] = {
-      src: './assets/img/vue.jpg'
-    };
+  ngOnInit(): void { 
+    this.startAutoSlide();
+  }
+
+  ngOnDestroy(): void {
+    this.stopAutoSlide();
+  }
+
+  prev() {
+    this.currentIndex = (this.currentIndex > 0) ? this.currentIndex - 1 : this.items.length - 1;
+    this.resetAutoSlide();
+  }
+
+  next() {
+    this.currentIndex = (this.currentIndex < this.items.length - 1) ? this.currentIndex + 1 : 0;
+    this.resetAutoSlide();
+  }
+
+  private resetAutoSlide() {
+    this.stopAutoSlide();
+    this.startAutoSlide();
+  }
+
+  private startAutoSlide() {
+    this.intervalId = setInterval(() => {
+      this.next();
+    }, this.intervalTime);
+  }
+
+  private stopAutoSlide() {
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
+    }
   }
 }
