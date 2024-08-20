@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+   currentLanguage: string = 'ESP';  // El idioma por defecto es 'ESP'
 
+  toggleLanguage(): void {
+    this.currentLanguage = this.currentLanguage === 'ESP' ? 'ENG' : 'ESP';
+  }
   toggleSearch(): void {
     const searchInput = document.getElementById('search-input');
     const registerButton = document.getElementById('btn-register');
