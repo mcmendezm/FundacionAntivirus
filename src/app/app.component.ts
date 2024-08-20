@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { OnInit } from '@angular/core';
-import { initFlowbite } from 'flowbite';
 
 @Component({
   selector: 'app-root',
@@ -14,14 +12,10 @@ import { initFlowbite } from 'flowbite';
   `,
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'angular-anti';
 
   constructor(private router: Router) {}
-
-  ngOnInit(): void {
-    initFlowbite();
-}
 
   navigateToSection(section: string) {
     this.router.navigate([], { fragment: section });

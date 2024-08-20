@@ -5,7 +5,6 @@ import { NewsComponent } from './components/pages/news/news.component';
 import { OurteamComponent } from './components/pages/ourteam/ourteam.component';
 import { RegisterComponent } from './components/pages/register/register.component';
 import { LoginComponent } from './components/pages/login/login.component'; 
-import { CarouselComponent } from './components/shared/carousel/carousel.component';
 
 
 const routes: Routes = [
@@ -15,7 +14,6 @@ const routes: Routes = [
   { path: 'ourteam', component: OurteamComponent},
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'carousel', component: CarouselComponent }
 
 ];
 

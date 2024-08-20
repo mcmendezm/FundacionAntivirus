@@ -23,7 +23,6 @@ import { LoginFormComponent } from './components/pages/login/loginComponents/log
 import { SocialLoginComponent } from './components/pages/login/loginComponents/social-login/social-login.component';
 import { ButtonComponent } from './components/shared/button/button.component';
 import { WompiButtonComponent } from './components/shared/wompi-button/wompi-button.component';
-import { CarouselComponent } from './components/shared/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +48,6 @@ import { CarouselComponent } from './components/shared/carousel/carousel.compone
     SocialLoginComponent,
     ButtonComponent,
     WompiButtonComponent,
-    CarouselComponent
   ],
   imports: [
     BrowserModule,
