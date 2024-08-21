@@ -16,14 +16,14 @@
       </svg>
     </button>
   </div>
-  <div class="hidden md:flex items-center space-x-5 pr-4 lg:pr-20 relative">
+  <div class="hidden md:flex items-center space-x-8 pr-4 lg:relative">
     <div class="hidden md:flex space-x-5 mr-3 mt-2">
       <a id="btn-register" routerLink="register" routerLinkActive="active-link">
         <img src="assets/images/toggle_off_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="register" width="35px">
       </a>
       <div class="relative">
         <a id="btn-login" (click)="toggleDropdown()" class="cursor-pointer">
-          <img src="assets/images/person_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="login" width="35px">
+          <img src="assets/images/person_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="login" width="37px">
         </a>
         <div id="dropdown" class="hidden absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg z-50">
           <ul class="py-1">
@@ -40,15 +40,15 @@
     <div class="relative flex items-center">
       <input type="text" placeholder="{{ 'navbar.search' | transloco }}..." id="search-input" class="hidden h-[40px] w-[450px] rounded-[30px] bg-[#F5F5F520] text-white absolute right-[4px] top-[-8px] pl-5">
       <button class="bg-none border-none text-[20px] cursor-pointer relative right-[15px] top-[4px] focus:outline-none" (click)="toggleSearch()">
-        <img src="assets/images/icons8-búsqueda-64 2.png" alt="search" width="30px">
+        <img src="assets/images/icons8-búsqueda-64 2.png" alt="search" width="28px">
       </button>
     </div>
   </div>
-  <button (click)="toggleLanguage()" class="bg-none border-none text-white cursor-pointer focus:outline-none ml-2">
+  <button (click)="toggleLanguage()" class="bg-none border-none text-white cursor-pointer ml-4 focus:outline-none lg:mt-1 lg:mx-0">
     {{ currentLanguage }}
   </button>
-  <div class="relative ml-4">
-    <div class="flex items-center">
+  <div class="relative ml-3 lg:ml-5 ">
+    <div class="flex items-center ">
       <div *ngIf="(darkModeService.darkModeSignal() === 'dark'); else elseblock">
         <span (click)="toggleDarkMode()">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
