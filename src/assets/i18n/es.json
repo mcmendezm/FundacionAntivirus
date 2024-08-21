@@ -1,0 +1,63 @@
+{
+  "navbar": {
+    "services": "Servicios",
+    "opportunities": "Oportunidades",
+    "aboutUs": "Quiénes Somos",
+    "news": "Novedades",
+    "register": "Registrarme",
+    "login": "Ingresar",
+    "search": "Buscar"
+  },
+    "header": {
+    "title": "¡Tu futuro inicia aquí!",
+    "description": "En la Fundación Antivirus para la Deserción creemos que cada persona merece acceso a las mejores oportunidades. Por eso, ofrecemos una plataforma personalizada donde puedes explorar becas, cursos y programas adaptados a tus intereses y necesidades.",
+    "contactUs": "Contáctanos",
+    "learnAboutUs": "Conoce sobre nosotros"
+  },
+  "opportunities": {
+    "heading": "¡Descubre estas oportunidades únicas!",
+    "cards": {
+      "nodoEafit": {
+        "title": "Nodo Eafit",
+        "description": "Participa en programas de formación y talleres en la Universidad EAFIT en el área de la tecnología para potenciar tus habilidades y conocimientos. ¡Inscríbete hoy!"
+      },
+      "velezReyes": {
+        "title": "Becas vélezreyes+",
+        "description": "Ofrecen apoyo financiero a estudiantes destacados. Solicita tu beca y alcanza tus metas educativas."
+      },
+      "comfama": {
+        "title": "Comfama",
+        "description": "Accede a programas educativos y recreativos con Comfama. Encuentra la oportunidad perfecta para tu crecimiento personal y profesional."
+      }
+    }
+  },
+    "services": {
+    "heading": "Servicios",
+    "cards": {
+      "proVocacion": {
+        "title": "Pro-Vocación",
+        "description": "Descubre tu verdadera vocación a través de nuestro programa Pro-Vocación. Te ayudamos a identificar tus fortalezas y a explorar las mejores opciones educativas y profesionales. ¡Da el primer paso hacia tu futuro hoy!",
+        "buttonText": "LO QUIERO"
+      },
+      "asesoriaSociopedagogica": {
+        "title": "Asesoría Sociopedagógica",
+        "description": "Recibe orientación personalizada para superar los desafíos educativos. Nuestra asesoría sociopedagógica te ofrece herramientas y estrategias para mejorar tu rendimiento académico y bienestar personal.",
+        "buttonText": "LO QUIERO"
+      },
+      "testSociovocacional": {
+        "title": "Test Sociovocacional",
+        "description": "¿No estás seguro de cuál es la mejor carrera para ti? Nuestro Test Sociovocacional te guiará en la elección de una carrera basada en tus intereses, habilidades y valores personales. ¡Descubre tu camino ideal!",
+        "buttonText": "LO QUIERO"
+      }
+    }
+},
+  "footer": {
+    "contactUs": "¿Quieres saber más de nosotros?",
+    "callToAction": "Contáctanos hoy mismo.",
+    "bankOfOpportunities": "Banco de Oportunidades",
+    "rightsReserved": "FUNDACIÓN ANTIVIRUS © 2024 - Todos los Derechos Reservados"
+  },
+    "button": {
+    "donate": "Donar ❤️"
+  }
+}

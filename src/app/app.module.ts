@@ -28,6 +28,8 @@ import { OpportunitieCardComponent } from './components/pages/home/componentHome
 import { ServicesCardComponent } from './components/pages/home/componentHome/services/services-card/services-card.component';
 import { TeamCardComponent } from './components/pages/ourteam/ourteamComponents/team-card/team-card.component';
 import { OpportunityCardComponent } from './components/pages/news/newsComponents/opportunity-card/opportunity-card.component';
+import { HttpClientModule } from '@angular/common/http';
+import { TranslocoRootModule } from './transloco-root.module';
 
 @NgModule({
   declarations: [
@@ -61,7 +63,9 @@ import { OpportunityCardComponent } from './components/pages/news/newsComponents
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    TranslocoRootModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],  
   providers: [],

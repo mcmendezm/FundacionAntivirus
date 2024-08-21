@@ -1,31 +1,31 @@
 <section id="opportunities" class="py-20 bg-muted w-full">
-  <h2 class="text-3xl text-[#32526E] text-center mb-5">¡Descubre estas oportunidades únicas!</h2>
+  <h2 class="text-3xl text-[#32526E] text-center mb-5">{{ 'opportunities.heading' | transloco }}</h2>
   <div class="flex justify-center flex-wrap gap-5">
     <app-opportunitie-card
-     class=" bg-card rounded-lg shadow-md sm:w-64 text-center p-5 transform transition-transform hover:scale-105"
+      class="bg-card rounded-lg shadow-md sm:w-64 text-center p-5 transform transition-transform hover:scale-105"
       link="https://es.nodoeafit.com/" 
       imageSrc="assets/images/nodo.png" 
-      imageAlt="Nodo Eafit" 
-      title="Nodo Eafit" 
-      description="Participa en programas de formación y talleres en la Universidad EAFIT en el área de la tecnología para potenciar tus habilidades y conocimientos. ¡Inscríbete hoy!">
+      imageAlt="{{ 'opportunities.cards.nodoEafit.title' | transloco }}" 
+      [title]="'opportunities.cards.nodoEafit.title' | transloco" 
+      [description]="'opportunities.cards.nodoEafit.description' | transloco">
     </app-opportunitie-card>
 
-    <app-opportunitie-card 
-    class=" bg-card rounded-lg shadow-md sm:w-64 text-center p-5 transform transition-transform hover:scale-105"
+    <app-opportunitie-card
+      class="bg-card rounded-lg shadow-md sm:w-64 text-center p-5 transform transition-transform hover:scale-105"
       link="https://velezreyesmas.com/" 
       imageSrc="assets/images/velez.png" 
-      imageAlt="Becas vélezreyes+" 
-      title="Becas vélezreyes+" 
-      description="Ofrecen apoyo financiero a estudiantes destacados. Solicita tu beca y alcanza tus metas educativas.">
+      imageAlt="{{ 'opportunities.cards.velezReyes.title' | transloco }}" 
+      [title]="'opportunities.cards.velezReyes.title' | transloco" 
+      [description]="'opportunities.cards.velezReyes.description' | transloco">
     </app-opportunitie-card>
 
-    <app-opportunitie-card 
-    class=" bg-card rounded-lg shadow-md sm:w-64 text-center p-5 transform transition-transform hover:scale-105"
+    <app-opportunitie-card
+      class="bg-card rounded-lg shadow-md sm:w-64 text-center p-5 transform transition-transform hover:scale-105"
       link="https://www.comfama.com/trabajo-con-proposito/empleo/centro-de-empleo-para-la-industria-digital/" 
       imageSrc="assets/images/comfama.jpg" 
-      imageAlt="Comfama" 
-      title="Comfama" 
-      description="Accede a programas educativos y recreativos con Comfama. Encuentra la oportunidad perfecta para tu crecimiento personal y profesional.">
+      imageAlt="{{ 'opportunities.cards.comfama.title' | transloco }}" 
+      [title]="'opportunities.cards.comfama.title' | transloco" 
+      [description]="'opportunities.cards.comfama.description' | transloco">
     </app-opportunitie-card>
   </div>
 </section>

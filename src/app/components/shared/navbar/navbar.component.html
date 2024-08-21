@@ -4,10 +4,10 @@
       <img src="assets/images/logo 2.png" alt="Antivirus Logo" class="h-16 md:h-20">
     </a>
     <ul class="hidden md:flex space-x-5 items-center" id="navegation">
-      <li><a routerLink="/home" fragment="service" routerLinkActive="active-link" class="nav-link">Servicios</a></li>
-      <li><a routerLink="/home" fragment="opportunities" routerLinkActive="active-link" class="nav-link">Oportunidades</a></li>
-      <li><a routerLink="/ourteam" routerLinkActive="active-link" class="nav-link">Quiénes Somos</a></li>
-      <li><a routerLink="/news" routerLinkActive="active-link" class="nav-link">Novedades</a></li>
+      <li><a routerLink="/home" fragment="service" routerLinkActive="active-link" class="nav-link">{{ 'navbar.services' | transloco }}</a></li>
+      <li><a routerLink="/home" fragment="opportunities" routerLinkActive="active-link" class="nav-link">{{ 'navbar.opportunities' | transloco }}</a></li>
+      <li><a routerLink="/ourteam" routerLinkActive="active-link" class="nav-link">{{ 'navbar.aboutUs' | transloco }}</a></li>
+      <li><a routerLink="/news" routerLinkActive="active-link" class="nav-link">{{ 'navbar.news' | transloco }}</a></li>
     </ul>
     <!-- Botón de menú hamburguesa para tablet/móvil -->
     <button class="md:hidden flex items-center" (click)="openModal()">
@@ -28,10 +28,10 @@
         <div id="dropdown" class="hidden absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg z-50">
           <ul class="py-1">
             <li>
-              <a routerLink="login" class="block px-4 py-2 text-gray-700 hover:bg-gray-100" (click)="toggleDropdown()">Ingresar</a>
+              <a routerLink="login" class="block px-4 py-2 text-gray-700 hover:bg-gray-100" (click)="toggleDropdown()">{{ 'navbar.login' | transloco }}</a>
             </li>
             <li>
-              <a routerLink="register" class="block px-4 py-2 text-gray-700 hover:bg-gray-100" (click)="toggleDropdown()">Registrarme</a>
+              <a routerLink="register" class="block px-4 py-2 text-gray-700 hover:bg-gray-100" (click)="toggleDropdown()">{{ 'navbar.register' | transloco }}</a>
             </li>
           </ul>
         </div>

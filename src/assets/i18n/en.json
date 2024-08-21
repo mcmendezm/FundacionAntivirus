@@ -1,0 +1,65 @@
+{
+  "navbar": {
+    "services": "Services",
+    "opportunities": "Opportunities",
+    "aboutUs": "About Us",
+    "news": "News",
+    "register": "Register",
+    "login": "Login",
+    "search": "Search"
+  },
+  "header": {
+    "title": "Your future starts here!",
+    "description": "At the Antivirus Foundation for Dropout Prevention, we believe that everyone deserves access to the best opportunities. That's why we offer a personalized platform where you can explore scholarships, courses, and programs tailored to your interests and needs.",
+    "contactUs": "Contact Us",
+    "learnAboutUs": "Learn About Us"
+},
+  "opportunities": {
+    "heading": "Discover these unique opportunities!",
+    "cards": {
+      "nodoEafit": {
+        "title": "Nodo Eafit",
+        "description": "Participate in training programs and workshops at EAFIT University in the field of technology to enhance your skills and knowledge. Sign up today!"
+      },
+      "velezReyes": {
+        "title": "VélezReyes+ Scholarships",
+        "description": "They offer financial support to outstanding students. Apply for your scholarship and achieve your educational goals."
+      },
+      "comfama": {
+        "title": "Comfama",
+        "description": "Access educational and recreational programs with Comfama. Find the perfect opportunity for your personal and professional growth."
+      }
+    }
+},
+  "services": {
+    "heading": "Services",
+    "cards": {
+      "proVocacion": {
+        "title": "Pro-Vocation",
+        "description": "Discover your true vocation through our Pro-Vocation program. We help you identify your strengths and explore the best educational and professional options. Take the first step towards your future today!",
+        "buttonText": "I WANT IT"
+      },
+      "asesoriaSociopedagogica": {
+        "title": "Sociopedagogical Counseling",
+        "description": "Receive personalized guidance to overcome educational challenges. Our sociopedagogical counseling offers tools and strategies to improve your academic performance and personal well-being.",
+        "buttonText": "I WANT IT"
+      },
+      "testSociovocacional": {
+        "title": "Sociovocational Test",
+        "description": "Not sure which career is best for you? Our Sociovocational Test will guide you in choosing a career based on your interests, skills, and personal values. Discover your ideal path!",
+        "buttonText": "I WANT IT"
+      }
+    }
+  },
+  "footer": {
+    "contactUs": "Want to know more about us?",
+    "callToAction": "Contact us today.",
+    "bankOfOpportunities": "Bank of Opportunities",
+    "rightsReserved": "ANTIVIRUS FOUNDATION © 2024 - All Rights Reserved"
+  },
+  "button": {
+    "donate": "Donate ❤️"
+}
+
+
+}

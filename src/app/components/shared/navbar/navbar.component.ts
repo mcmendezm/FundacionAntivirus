@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslocoService } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-navbar',
@@ -6,11 +7,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-   currentLanguage: string = 'ESP';  // El idioma por defecto es 'ESP'
+  currentLanguage: string;
+
+  constructor(private translocoService: TranslocoService) {
+    this.currentLanguage = this.translocoService.getActiveLang() === 'es' ? 'ESP' : 'ENG';
+  }
 
   toggleLanguage(): void {
-    this.currentLanguage = this.currentLanguage === 'ESP' ? 'ENG' : 'ESP';
+    if (this.currentLanguage === 'ESP') {
+      this.translocoService.setActiveLang('en');
+      this.currentLanguage = 'ENG';
+    } else {
+      this.translocoService.setActiveLang('es');
+      this.currentLanguage = 'ESP';
+    }
   }
+
   toggleSearch(): void {
     const searchInput = document.getElementById('search-input');
     const registerButton = document.getElementById('btn-register');
