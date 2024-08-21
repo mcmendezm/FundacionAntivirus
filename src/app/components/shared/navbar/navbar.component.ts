@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { TranslocoService } from '@jsverse/transloco';
+import { DarkModeService } from 'src/app/services/dark-mode.service';
 
 @Component({
   selector: 'app-navbar',
@@ -21,6 +22,12 @@ export class NavbarComponent {
       this.translocoService.setActiveLang('es');
       this.currentLanguage = 'ESP';
     }
+  }
+
+  darkModeService: DarkModeService = inject(DarkModeService);
+
+  toggleDarkMode(){
+    this.darkModeService.updateDarkMode();
   }
 
   toggleSearch(): void {
