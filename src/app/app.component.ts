@@ -17,6 +17,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 })
 export class AppComponent {
   title = 'angular-anti';
+
   constructor(private router: Router) {}
 
   navigateToSection(section: string) {

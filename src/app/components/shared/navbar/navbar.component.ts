@@ -1,4 +1,5 @@
 import { Component, inject } from '@angular/core';
+import { TranslocoService } from '@jsverse/transloco';
 import { DarkModeService } from 'src/app/services/dark-mode.service';
 
 @Component({
@@ -7,6 +8,21 @@ import { DarkModeService } from 'src/app/services/dark-mode.service';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  currentLanguage: string;
+
+  constructor(private translocoService: TranslocoService) {
+    this.currentLanguage = this.translocoService.getActiveLang() === 'es' ? 'ESP' : 'ENG';
+  }
+
+  toggleLanguage(): void {
+    if (this.currentLanguage === 'ESP') {
+      this.translocoService.setActiveLang('en');
+      this.currentLanguage = 'ENG';
+    } else {
+      this.translocoService.setActiveLang('es');
+      this.currentLanguage = 'ESP';
+    }
+  }
 
   darkModeService: DarkModeService = inject(DarkModeService);
 
@@ -41,7 +57,7 @@ export class NavbarComponent {
     }
   }
 
-  openModal(): void {
+openModal(): void {
     const modal = document.getElementById('menu-modal');
     if (modal) {
       modal.classList.remove('hidden');

@@ -5,10 +5,10 @@
       <img src="assets/images/logo 2.png" alt="Antivirus Logo" class="h-16 md:h-20">
     </a>
     <ul class="hidden md:flex space-x-5 items-center" id="navegation">
-      <li><a routerLink="/home" fragment="service" routerLinkActive="active-link" class="nav-link">Servicios</a></li>
-      <li><a routerLink="/home" fragment="opportunities" routerLinkActive="active-link" class="nav-link">Oportunidades</a></li>
-      <li><a routerLink="/ourteam" routerLinkActive="active-link" class="nav-link">Quiénes Somos</a></li>
-      <li><a routerLink="/news" routerLinkActive="active-link" class="nav-link">Novedades</a></li>
+      <li><a routerLink="/home" fragment="service" routerLinkActive="active-link" class="nav-link">{{ 'navbar.services' | transloco }}</a></li>
+      <li><a routerLink="/home" fragment="opportunities" routerLinkActive="active-link" class="nav-link">{{ 'navbar.opportunities' | transloco }}</a></li>
+      <li><a routerLink="/ourteam" routerLinkActive="active-link" class="nav-link">{{ 'navbar.aboutUs' | transloco }}</a></li>
+      <li><a routerLink="/news" routerLinkActive="active-link" class="nav-link">{{ 'navbar.news' | transloco }}</a></li>
     </ul>
     <!-- Botón de menú hamburguesa para tablet/móvil -->
     <button class="md:hidden flex items-center" (click)="openModal()">
@@ -29,22 +29,25 @@
         <div id="dropdown" class="hidden absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg z-50">
           <ul class="py-1">
             <li>
-              <a routerLink="login" class="block px-4 py-2 text-gray-700 hover:bg-gray-100" (click)="toggleDropdown()" >Ingresar</a>
+              <a routerLink="login" class="block px-4 py-2 text-gray-700 hover:bg-gray-100" (click)="toggleDropdown()">{{ 'navbar.login' | transloco }}</a>
             </li>
             <li>
-              <a routerLink="register" class="block px-4 py-2 text-gray-700 hover:bg-gray-100" (click)="toggleDropdown()">Registrarme</a>
+              <a routerLink="register" class="block px-4 py-2 text-gray-700 hover:bg-gray-100" (click)="toggleDropdown()">{{ 'navbar.register' | transloco }}</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
-    <div class="relative">
-      <input type="text" placeholder="Buscar..." id="search-input" class="hidden h-[45px] w-[500px] rounded-[30px] bg-[#F5F5F520] text-white absolute right-[5px] pl-5">
-      <button class="bg-none border-none text-[20px] cursor-pointer relative right-[15px] top-[8px] focus:outline-none" (click)="toggleSearch()">
+    <div class="relative flex items-center">
+      <input type="text" placeholder="{{ 'navbar.search' | transloco }}..." id="search-input" class="hidden h-[40px] w-[450px] rounded-[30px] bg-[#F5F5F520] text-white absolute right-[4px] top-[-8px] pl-5">
+      <button class="bg-none border-none text-[20px] cursor-pointer relative right-[15px] top-[4px] focus:outline-none" (click)="toggleSearch()">
         <img src="assets/images/icons8-búsqueda-64 2.png" alt="search" width="30px">
       </button>
     </div>
   </div>
+  <button (click)="toggleLanguage()" class="bg-none border-none text-white cursor-pointer focus:outline-none ml-2">
+    {{ currentLanguage }}
+  </button>
   <div class="relative mt-4 md:mt-0">
     <div class="flex items-center">
       <div *ngIf="(darkModeService.darkModeSignal() === 'dark'); else elseblock">
@@ -70,7 +73,7 @@
 </nav>
 
 <!-- Modal del menú hamburguesa -->
-<div id="menu-modal" class="hidden fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50">
+<div id="menu-modal" class=" hidden fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50">
   <div class="bg-white rounded-lg shadow-lg w-3/4 md:w-1/3 p-6">
     <div class="flex justify-end">
       <button (click)="closeModal()" class="text-gray-700 hover:text-black focus:outline-none">
@@ -80,29 +83,27 @@
       </button>
     </div>
     <ul class="flex flex-col space-y-4 text-center mt-6" id="menu-options">
-      <li><a (click)="closeModal()" routerLink="/home" fragment="service" routerLinkActive="active-link" class="nav-link-modal text-[#283E51] hover:text-[#4B79A1]">Servicios</a></li>
-      <li><a (click)="closeModal()" routerLink="/home" fragment="opportunities" routerLinkActive="active-link" class="nav-link-modal text-[#283E51] hover:text-[#4B79A1]">Oportunidades</a></li>
-      <li><a (click)="closeModal()" routerLink="/ourteam" routerLinkActive="active-link" class="nav-link-modal text-[#283E51] hover:text-[#4B79A1]">Quiénes Somos</a></li>
-      <li><a (click)="closeModal()" routerLink="/news" routerLinkActive="active-link" class="nav-link-modal text-[#283E51] hover:text-[#4B79A1]">Novedades</a></li>
-      <li><a (click)="showSearchInModal()" class="nav-link-modal text-[#283E51] hover:text-[#4B79A1]">Buscar</a></li>
+      <li><a (click)="closeModal()" routerLink="/home" fragment="service" routerLinkActive="active-link" class="nav-link-modal text-[#283E51] hover:text-[#4B79A1]">{{ 'navbar.services' | transloco }}</a></li>
+      <li><a (click)="closeModal()" routerLink="/home" fragment="opportunities" routerLinkActive="active-link" class="nav-link-modal text-[#283E51] hover:text-[#4B79A1]">{{ 'navbar.opportunities' | transloco }}</a></li>
+      <li><a (click)="closeModal()" routerLink="/ourteam" routerLinkActive="active-link" class="nav-link-modal text-[#283E51] hover:text-[#4B79A1]">{{ 'navbar.aboutUs' | transloco }}</a></li>
+      <li><a (click)="closeModal()" routerLink="/news" routerLinkActive="active-link" class="nav-link-modal text-[#283E51] hover:text-[#4B79A1]">{{ 'navbar.news' | transloco }}</a></li>
+      <li><a (click)="showSearchInModal()" class="nav-link-modal text-[#283E51] hover:text-[#4B79A1]">{{ 'navbar.search' | transloco }}</a></li>
       <div class="flex justify-between mt-8">
-      <a routerLink="register" (click)="closeModal()" class="text-white bg-[#4B79A1] hover:bg-[#3A5A7F] px-4 py-2 rounded-lg mx-2">Registrarme</a>
-      <a routerLink="login" (click)="closeModal()" class="text-white bg-[#4B79A1] hover:bg-[#3A5A7F] px-4 py-2 rounded-lg mx-2">Ingresar</a>
+      <a routerLink="register" (click)="closeModal()" class="text-white bg-[#4B79A1] hover:bg-[#3A5A7F] px-4 py-2 rounded-lg mx-2">{{ 'navbar.login' | transloco }}</a>
+      <a routerLink="login" (click)="closeModal()" class="text-white bg-[#4B79A1] hover:bg-[#3A5A7F] px-4 py-2 rounded-lg mx-2">{{ 'navbar.register' | transloco }}</a>
     </div>
     </ul>
     <div id="modal-search" class="hidden mt-6">
       <div class="relative">
-        <input type="text" placeholder="Buscar..." id="modal-search-input" class="h-[45px] w-full rounded-[30px] bg-[#F5F5F520] text-black pl-5">
+        <h4>{{ 'navbar.search' | transloco }}</h4>
+        <input type="text" placeholder="{{ 'navbar.search' | transloco }}..." id="modal-search-input" class="h-[45px] w-full rounded-[30px] bg-[#F5F5F520] text-black pl-5">
         <button class="bg-none border-none text-[20px] cursor-pointer absolute right-[15px] top-[10px] focus:outline-none">
           <img src="assets/images/icons8-búsqueda-64 2.png" alt="search" width="30px">
         </button>
       </div>
       <div class="flex justify-center mt-8">
-        <button class="text-white bg-[#4B79A1] hover:bg-[#3A5A7F] px-4 py-2 rounded-lg">Enviar</button>
+        <button class="text-white bg-[#4B79A1] hover:bg-[#3A5A7F] px-4 py-2 rounded-lg">{{ 'navbar.send' | transloco }}</button>
       </div>
     </div>
   </div>
 </div>
-
-
-
