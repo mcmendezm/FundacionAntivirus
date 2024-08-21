@@ -32,6 +32,10 @@ import { CarouselComponent } from './components/pages/news/newsComponents/carous
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { TranslocoRootModule } from './transloco-root.module';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { environment } from 'src/environments/environments';
+
 
 @NgModule({
   declarations: [
@@ -69,7 +73,9 @@ import { TranslocoRootModule } from './transloco-root.module';
     BrowserAnimationsModule,
     CommonModule,
     HttpClientModule,
-    TranslocoRootModule
+    TranslocoRootModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],  
   providers: [],
