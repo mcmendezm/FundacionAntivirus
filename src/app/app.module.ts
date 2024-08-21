@@ -30,6 +30,8 @@ import { OpportunityCardComponent } from './components/pages/news/newsComponents
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselComponent } from './components/pages/news/newsComponents/carousel/carousel.component';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { TranslocoRootModule } from './transloco-root.module';
 
 @NgModule({
   declarations: [
@@ -65,7 +67,9 @@ import { CommonModule } from '@angular/common';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    CommonModule
+    CommonModule,
+    HttpClientModule,
+    TranslocoRootModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],  
   providers: [],

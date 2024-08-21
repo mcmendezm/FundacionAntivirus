@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslocoService } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-navbar',
@@ -6,6 +7,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  currentLanguage: string;
+
+  constructor(private translocoService: TranslocoService) {
+    this.currentLanguage = this.translocoService.getActiveLang() === 'es' ? 'ESP' : 'ENG';
+  }
+
+  toggleLanguage(): void {
+    if (this.currentLanguage === 'ESP') {
+      this.translocoService.setActiveLang('en');
+      this.currentLanguage = 'ENG';
+    } else {
+      this.translocoService.setActiveLang('es');
+      this.currentLanguage = 'ESP';
+    }
+  }
 
   toggleSearch(): void {
     const searchInput = document.getElementById('search-input');
@@ -34,7 +50,7 @@ export class NavbarComponent {
     }
   }
 
-  openModal(): void {
+openModal(): void {
     const modal = document.getElementById('menu-modal');
     if (modal) {
       modal.classList.remove('hidden');
