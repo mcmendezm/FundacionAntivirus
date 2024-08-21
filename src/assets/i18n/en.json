@@ -6,7 +6,8 @@
     "news": "News",
     "register": "Register",
     "login": "Login",
-    "search": "Search"
+    "search": "Search",
+    "send": "Send"
   },
   "header": {
     "title": "Your future starts here!",

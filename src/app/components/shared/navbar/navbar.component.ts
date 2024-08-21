@@ -51,14 +51,12 @@ export class NavbarComponent {
   }
 
 openModal(): void {
-  const modal = document.getElementById('menu-modal');
-  if (modal) {
-    modal.classList.remove('hidden');
-    modal.classList.add('visible');
-  } else {
-    console.error('Modal element not found');
+    const modal = document.getElementById('menu-modal');
+    if (modal) {
+      modal.classList.remove('hidden');
+      modal.classList.add('visible');
+    }
   }
-}
 
   closeModal(): void {
     const modal = document.getElementById('menu-modal');
