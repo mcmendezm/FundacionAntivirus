@@ -11,7 +11,6 @@ import { FooterComponent } from './components/shared/footer/footer.component';
 import { HeroComponent } from './components/pages/home/componentHome/hero/hero.component';
 import { OpportunitiesComponent } from './components/pages/home/componentHome/opportunities/opportunities.component';
 import { ServicesComponent } from './components/pages/home/componentHome/services/services.component';
-import { CarouselComponent } from './components/pages/news/newsComponents/carousel/carousel.component';
 import { SearchComponent } from './components/pages/news/newsComponents/search/search.component';
 import { OpportunityCardsComponent } from './components/pages/news/newsComponents/opportunity-cards/opportunity-cards.component';
 import { TeamSectionComponent } from './components/pages/ourteam/ourteamComponents/team-section/team-section.component';
@@ -28,8 +27,14 @@ import { OpportunitieCardComponent } from './components/pages/home/componentHome
 import { ServicesCardComponent } from './components/pages/home/componentHome/services/services-card/services-card.component';
 import { TeamCardComponent } from './components/pages/ourteam/ourteamComponents/team-card/team-card.component';
 import { OpportunityCardComponent } from './components/pages/news/newsComponents/opportunity-card/opportunity-card.component';
+<<<<<<< HEAD
 import { HttpClientModule } from '@angular/common/http';
 import { TranslocoRootModule } from './transloco-root.module';
+=======
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselComponent } from './components/pages/news/newsComponents/carousel/carousel.component';
+import { CommonModule } from '@angular/common';
+>>>>>>> dev
 
 @NgModule({
   declarations: [
@@ -43,7 +48,6 @@ import { TranslocoRootModule } from './transloco-root.module';
     HeroComponent,
     OpportunitiesComponent,
     ServicesComponent,
-    CarouselComponent,
     SearchComponent,
     OpportunityCardsComponent,
     TeamSectionComponent,
@@ -60,12 +64,18 @@ import { TranslocoRootModule } from './transloco-root.module';
     ServicesCardComponent,
     TeamCardComponent,
     OpportunityCardComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+<<<<<<< HEAD
     HttpClientModule,
     TranslocoRootModule
+=======
+    BrowserAnimationsModule,
+    CommonModule
+>>>>>>> dev
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],  
   providers: [],
