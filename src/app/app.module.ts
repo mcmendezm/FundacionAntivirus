@@ -23,6 +23,10 @@ import { LoginFormComponent } from './components/pages/login/loginComponents/log
 import { SocialLoginComponent } from './components/pages/login/loginComponents/social-login/social-login.component';
 import { ButtonComponent } from './components/shared/button/button.component';
 import { WompiButtonComponent } from './components/shared/wompi-button/wompi-button.component';
+import { OpportunitieCardComponent } from './components/pages/home/componentHome/opportunities/opportunitie-card/opportunitie-card.component';
+import { ServicesCardComponent } from './components/pages/home/componentHome/services/services-card/services-card.component';
+import { TeamCardComponent } from './components/pages/ourteam/ourteamComponents/team-card/team-card.component';
+import { OpportunityCardComponent } from './components/pages/news/newsComponents/opportunity-card/opportunity-card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselComponent } from './components/pages/news/newsComponents/carousel/carousel.component';
 import { CommonModule } from '@angular/common';
@@ -51,6 +55,10 @@ import { CommonModule } from '@angular/common';
     SocialLoginComponent,
     ButtonComponent,
     WompiButtonComponent,
+    OpportunitieCardComponent,
+    ServicesCardComponent,
+    TeamCardComponent,
+    OpportunityCardComponent,
     CarouselComponent
   ],
   imports: [

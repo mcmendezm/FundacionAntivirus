@@ -8,13 +8,12 @@ import { LoginComponent } from './components/pages/login/login.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full'},
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },  
   { path: 'news', component: NewsComponent },
-  { path: 'ourteam', component: OurteamComponent},
+  { path: 'ourteam', component: OurteamComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent },
-
+  { path: '**', redirectTo: '', pathMatch: 'full' }  
 ];
 
 @NgModule({
@@ -24,4 +23,4 @@ const routes: Routes = [
   )],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule { } 
