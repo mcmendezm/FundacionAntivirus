@@ -6,6 +6,7 @@ import { OurteamComponent } from './components/pages/ourteam/ourteam.component';
 import { RegisterComponent } from './components/pages/register/register.component';
 import { LoginComponent } from './components/pages/login/login.component'; 
 
+
 const routes: Routes = [
   { path: '', component: HomeComponent },  
   { path: 'news', component: NewsComponent },
