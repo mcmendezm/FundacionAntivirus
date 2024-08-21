@@ -1,5 +1,4 @@
-<nav class="flex items-center justify-between bg-[#172a41] dark:bg-black p-4 lg:px-20 w-full h-20 fixed top-0 z-50 shadow-lg sticky top-0">
-  <!-- bg-gradient-to-b from-[#283E51] to-[#4B79A1] -->
+<nav class="flex items-center justify-between bg-gradient-to-b from-[#283E51] to-[#4B79A1] dark:bg-[#172a41] p-4 lg:px-20 w-full h-20 fixed top-0 z-50 shadow-lg sticky top-0">
   <div class="flex items-center space-x-5 pl-4 lg:pl-20 w-full justify-between md:justify-start">
     <a routerLink="home" routerLinkActive="active-link" class="text-white logo">
       <img src="assets/images/logo 2.png" alt="Antivirus Logo" class="h-16 md:h-20">
@@ -48,12 +47,12 @@
   <button (click)="toggleLanguage()" class="bg-none border-none text-white cursor-pointer focus:outline-none ml-2">
     {{ currentLanguage }}
   </button>
-  <div class="relative mt-4 md:mt-0">
+  <div class="relative ml-4">
     <div class="flex items-center">
       <div *ngIf="(darkModeService.darkModeSignal() === 'dark'); else elseblock">
         <span (click)="toggleDarkMode()">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="size-6 text-white">
+            class="size-5 text-white">
             <path stroke-linecap="round" stroke-linejoin="round"
               d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
           </svg>

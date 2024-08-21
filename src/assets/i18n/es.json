@@ -157,5 +157,21 @@
     "heading": "¿QUIÉNES SOMOS?",
     "descriptionTitle": "SOMOS UNA ORGANIZACIÓN SIN ÁNIMO DE LUCRO QUE",
     "description": "Busca disminuir los niveles de deserción estudiantil en Colombia, mejorar los niveles de permanencia y de graduación, siendo esta nuestra manera de aportar al logro de un país con más educación y consecuentemente con más desarrollo."
+  },
+  "studyChances": {
+    "heading": "¡Oportunidades para estudiar!",
+    "sapienciaTitle": "Alianza empresarial - Sapiencia",
+    "sapienciaDescription": "Se enfoca en promover el empleo de mujeres y jóvenes, facilitando su acceso a oportunidades laborales dignas. A través de programas de capacitación en habilidades digitales, liderazgo y emprendimiento.",
+    "comfamaTitle": "Alianza empresarial - Comfama",
+    "comfamaDescription": "Se centra en impulsar el empleo, brindándoles acceso a oportunidades laborales justas. A través de programas de formación en habilidades digitales, liderazgo y desarrollo empresarial."
+  },
+  "formSearch": {
+    "placeHolder": "Busca tu próxima oportunidad",
+    "date": "Filtra tu búsqueda:",
+    "location": "Ubicación",
+    "tipeOportuniti": "Tipo de oportunidad",
+    "option1": "Educativa",
+    "button1": "Búsqueda",
+    "button2": "Limpiar"
   }
 }

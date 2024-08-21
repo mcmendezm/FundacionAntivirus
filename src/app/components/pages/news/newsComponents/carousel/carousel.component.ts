@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CarouselComponent implements OnInit {
   items = [
     { image: 'assets/images/Comfama-carrusel.jpg' },
-    { image: 'assets/images/nodo-carrusel.svg' },
+    { image: 'assets/images/nodo-carrusel.jpg' },
     { image: 'assets/images/Sapiencia-carrusel.jpg' }
   ];
   currentIndex = 0;

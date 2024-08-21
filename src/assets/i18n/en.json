@@ -155,5 +155,21 @@
     "heading": "WHO WE ARE?",
     "descriptionTitle": "WE ARE A NON-PROFIT ORGANIZATION THAT",
     "description": "Seeks to reduce student dropout rates in Colombia, improve retention and graduation rates, as our way of contributing to achieving a country with more education and consequently with more development."
+  },
+  "studyChances": {
+    "heading": "Study Opportunities!",
+    "sapienciaTitle": "Business Alliance - Sapiencia",
+    "sapienciaDescription": "Focuses on promoting employment for women and youth, facilitating their access to decent job opportunities. Through training programs in digital skills, leadership, and entrepreneurship.",
+    "comfamaTitle": "Business Alliance - Comfama",
+    "comfamaDescription": "Centers on boosting employment, providing access to fair job opportunities. Through training programs in digital skills, leadership, and business development."
+  },
+  "formSearch": {
+    "placeHolder": "Find your next opportunity",
+    "date": "Filter your search:",
+    "location": "Location",
+    "tipeOportuniti": "Type of opportunity",
+    "option1": "Educational",
+    "button1": "Search",
+    "button2": "Clear"
   }
 }
