@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Router } from '@angular/router';
+import { DarkModeService } from './services/dark-mode.service';
+import { CommonModule } from '@angular/common';
+import { NavbarComponent } from './components/shared/navbar/navbar.component';
 
 @Component({
   selector: 'app-root',
@@ -20,4 +23,6 @@ export class AppComponent {
   navigateToSection(section: string) {
     this.router.navigate([], { fragment: section });
   }
+
+  darkModeService: DarkModeService = inject(DarkModeService);
 }
